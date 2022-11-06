@@ -19,3 +19,20 @@ body {
   line-height: 1;
   font-weight: 400;
 }
+
+#w3a-modal .w3a-modal__inner {
+  max-width: 516px !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: none;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 200px;
+  background-color: #ced4da;
+}
