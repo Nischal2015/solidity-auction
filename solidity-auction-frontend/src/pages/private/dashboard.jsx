@@ -1,12 +1,12 @@
 import { Typography } from "@mui/material";
-import { Container, PageHeroContainer } from "../layouts";
+import { Container, PageHeroContainer } from "../../layouts";
 
-export default function AboutUs() {
+export default function Dashboard() {
   return (
     <section>
       <Container>
         <PageHeroContainer>
-          <Typography variant="h2">Solidity Auction Group</Typography>
+          <Typography variant="h2">This is the dashboard page</Typography>
         </PageHeroContainer>
       </Container>
     </section>
