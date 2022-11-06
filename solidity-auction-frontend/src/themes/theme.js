@@ -8,7 +8,16 @@ export const theme = createTheme({
       light: "#495057",
     },
   },
-  shape: {
-    borderRadius: 12,
+  typography: {
+    fontFamily: "'Montserrat', sans-serif",
+    allVariants: {
+      color: "#343a40",
+    },
+    h2: {
+      fontWeight: 500,
+      lineHeight: 1.2,
+      letterSpacing: "-0.5px",
+      wordSpacing: "1px",
+    },
   },
 });
