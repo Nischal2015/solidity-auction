@@ -7,7 +7,7 @@ const CustomLink = styled(NavLink)(({ theme }) => {
     textDecoration: "none",
     display: "inline-block",
     fontSize: "1.8rem",
-    fontWeight: "600",
+    fontWeight: "500",
     position: "relative",
     transition: "200ms all ease-in-out",
     color: theme.colors.tertiary.main,
@@ -28,7 +28,7 @@ const CustomLink = styled(NavLink)(({ theme }) => {
       height: "5px",
       width: "5px",
       borderRadius: "50%",
-      backgroundColor: "red",
+      backgroundColor: `${theme.palette.warning.dark}`,
       transition: "200ms opacity ease-in-out",
     },
     "&:hover::after, &:active::after, &.active::after": {
