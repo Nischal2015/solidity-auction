@@ -2,6 +2,7 @@ import { Container, PageHeroContainer } from "../layouts";
 import { Box, Button, styled, Typography, useTheme } from "@mui/material";
 import { authentication } from "../services";
 import { Notification } from "../components";
+import { useNavigate } from "react-router-dom";
 
 const SectionHero = styled("section")({
   position: "relative",
@@ -10,6 +11,7 @@ const SectionHero = styled("section")({
 });
 
 export default function Home() {
+  const navigate = useNavigate();
   const { login } = authentication();
   return (
     <SectionHero>
@@ -42,7 +44,7 @@ export default function Home() {
           <Button
             size="large"
             variant="contained"
-            onClick={login}
+            onClick={() => login(() => navigate("/portal/dashboard"))}
             color="warning"
             sx={{ borderRadius: "16px" }}
           >

@@ -9,10 +9,11 @@ export default function authentication() {
   };
 
   return {
-    async login() {
+    async login(callback) {
       if (!isWeb3AuthPresent()) return;
       const web3authProvider = await web3auth.connect();
       setProvider(web3authProvider);
+      callback && callback();
     },
 
     async getUserInfo() {
@@ -24,7 +25,7 @@ export default function authentication() {
       if (!isWeb3AuthPresent()) return;
       await web3auth.logout();
       setProvider(null);
-      callback();
+      callback && callback();
     },
   };
 }
